@@ -1,0 +1,26 @@
+
+--DROP table pessoas;
+
+CREATE TABLE "pessoas" (
+	"id" NUMERIC NOT NULL AUTOINCREMENT,
+	"nome" VARCHAR(200) NOT NULL,
+	"idade" INTEGER NOT NULL,
+	PRIMARY KEY ("id")
+)
+;
+COMMENT ON COLUMN "pessoas"."id" IS '';
+COMMENT ON COLUMN "pessoas"."nome" IS '';
+COMMENT ON COLUMN "pessoas"."idade" IS '';
+
+
+INSERT INTO "public"."pessoas" ("nome", "idade") VALUES ('Bruno', '41');
+
+INSERT INTO "public"."pessoas" ("nome", "idade") VALUES ('Fernanda', '39');
+
+INSERT INTO "public"."pessoas" ("nome", "idade") VALUES ('Mylena', '22');
+
+INSERT INTO "public"."pessoas" ("nome", "idade") VALUES ('Amanda', '14');
+
+INSERT INTO "public"."pessoas" ("nome", "idade") VALUES ('Bruno Augusto', '7');
+
+INSERT INTO "public"."pessoas" ("nome", "idade") VALUES ('Bela', '16');
